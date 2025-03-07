@@ -63,11 +63,13 @@ for (let i = 0; i < team.length; i++){
 
 console.log(team);
 
+// Creiamo un nuovo array che includerà solo il nome e i falli
 
-//Stampo l'array selezionando le varie proprietà
+const newTeam = [];
 
-console.log(team[0].nome, team[0].punti, team[0].falli);
-console.log(team[1].nome, team[1].punti, team[1].falli);
-console.log(team[2].nome, team[2].punti, team[2].falli);
-console.log(team[3].nome, team[3].punti, team[3].falli);
-console.log(team[4].nome, team[4].punti, team[4].falli);
+for (let i = 0; i < team.length; i++){
+    let {nome, falli} = team[i];
+    newTeam.push({nome, falli});
+}
+
+console.log(newTeam);
