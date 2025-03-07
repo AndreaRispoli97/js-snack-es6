@@ -4,6 +4,7 @@ console.log('Andrea');
 //Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
 //Stampare a schermo la bici con peso minore.
 
+const message = document.getElementById('message');
 
 //Creo un array di 4 oggetti
 const bikes = [
@@ -37,6 +38,8 @@ let lightBike = bikes[0];
 for (let i = 0; i < bikes.length; i++) {
     if (bikes[i].peso < lightBike.peso) {
         lightBike = bikes[i];
+
+        message.innerHTML = `La bici più leggera è ${(lightBike.peso)} ed è di ${(lightBike.nome)}`;    
     }
     
 }
