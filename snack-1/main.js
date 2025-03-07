@@ -39,7 +39,7 @@ for (let i = 0; i < bikes.length; i++) {
     if (bikes[i].peso < lightBike.peso) {
         lightBike = bikes[i];
 
-        message.innerHTML = `La bici più leggera è ${(lightBike.peso)} ed è di ${(lightBike.nome)}`;    
+        message.innerHTML = `La bici più leggera è ${(lightBike.peso)} ed è la ${(lightBike.nome)}`;    
     }
     
 }
